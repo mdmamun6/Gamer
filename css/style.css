@@ -252,7 +252,7 @@ ul li i{
 
 /* Game Categories Section Start Here */
 .categories{
-    padding: 60px 0px;
+    padding: 80px 0px;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
 .categories .container{
@@ -266,6 +266,21 @@ ul li i{
     justify-content: center;
 }
 .categories-box .img-box{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background: #fff;
+    border-radius: 50px;
+}
+.categories-box-2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-gap: 10px;
+    justify-content: center;
+    padding-top: 20px;
+}
+.categories-box-2 .img-box{
     display: flex;
     align-items: center;
     padding: 8px;
@@ -294,6 +309,47 @@ ul li i{
     color: #FF42A5;
 }
 /* Game Categories Section End Here */
+
+/* Footer section Start Here */
+.footer{
+    background: #0B0223;
+    padding: 80px 0px;
+}
+.footer-info{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+.footer-nav-1{
+    padding: 30px 0px;
+}
+.footer-nav-1 a{
+    font-size: 0.9rem;
+    color: #fff;
+    padding: 0px 25px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.footer-nav-2{
+    padding: 30px 0px;
+}
+.footer-nav-2 a{
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.60);
+    padding: 0px 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.socila-icon img{
+    width: 30px;
+    height: 30;
+    padding: 15px 8px;
+}
+.copyright{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 0.8rem;
+}
+/* Footer section End Here */
 
 /* Media quary Stat Here */
 @media (max-width: 576px) {
