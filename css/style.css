@@ -208,6 +208,7 @@ ul li i{
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    padding-top: 10px;
 }
 .card img{
     width: 100%;
@@ -222,42 +223,51 @@ ul li i{
 .hover-box .overly-icon p{
     text-align: center;
 }
-.hover-box{
+.feature-box{
     width: 25%;
+}
+.img-hover-box{
     position: relative;
-  
-}
-.hover-box:hover .img-overly img{
-    background: rgba(0,0,0,0.5);
-    opacity: 0.5;
-    border-radius: 15px;
-    z-index: 2;
-}
-.overly-icon{
-    opacity: 0;
     width: 100%;
+  } 
+.img-hover-box img{
+    display: block;
+    width: 100%;
+    height: auto;
+}  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    background-color: #000;
+}
+.img-hover-box:hover .overlay {
+    opacity: 0.8;
+    border-radius: 15px;
+}
+.overly-box{
+    color: #FF42A5;
+    font-size: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -o-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
-
-.hover-box:hover .overly-icon{
-   opacity: 1;
-}
-.hover-box:hover .overlay-bg{
-    opacity: 1;
-}
-.hover-box:hover .overly-icon p{
-    color: #FF42A5;
-}
-
-.hover-box .overly-icon img{
-    width: auto;
+.overly-box img{
+    width: 50%;
+    height: auto;
+    text-align: center;
+    padding-left: 25%;
+    padding-bottom: 25%;
 }
 /* Feature Section End Here */
 
