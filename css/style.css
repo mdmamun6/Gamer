@@ -215,15 +215,44 @@ ul li i{
 .hover-box{
     width: 25%;
 }
-.overly-icon{
-    width: 100%;
-}
 .hover-box .overly-icon img{
     width: 50px;
     height: 50px
 } 
 .hover-box .overly-icon p{
     text-align: center;
+}
+.hover-box{
+    width: 25%;
+    position: relative;
+  
+}
+
+.overly-icon{
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.hover-box:hover .overly-icon{
+   opacity: 1;
+}
+.hover-box:hover .overlay-bg{
+    opacity: 1;
+}
+.hover-box:hover .overly-icon p{
+    color: #FF42A5;
+}
+
+.hover-box .overly-icon img{
+    width: auto;
 }
 /* Feature Section End Here */
 
@@ -345,6 +374,7 @@ ul li i{
 .img-box:hover h4{
     color: #FF42A5;
 }
+
 /* Game Categories Section End Here */
 
 /* Footer section Start Here */
@@ -390,6 +420,9 @@ ul li i{
 
 /* Media quary Stat Here */
 @media (max-width: 576px) {
+    .container{
+        padding: 0px 20px;
+    }
     .row{
         display: flex;
         flex-direction: column;
@@ -419,4 +452,45 @@ ul li i{
     .banner .row{
         flex-direction: column-reverse;
     }
+    .banner-content{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        flex-direction: column;
+    }
+    .hover-box{
+        width: 100%;
+    }
+    .banner-img img {
+        width: 89%;
+      }
+    .banner-img .sm-img{
+        bottom: 120px;
+        right: 3px;
+    }
+    .banner-img .sm-img img {
+        width: 200px;
+        height: 200px;
+    }
+      .play-game .banner-content {
+        text-align: center;
+        padding-left: 0px;
+    }
+    .banner-2 .banner-content {
+        text-align: center;
+    }
+    .job-info .job-info-box-1{
+        text-align: left;
+    }
+    .careers img{
+        width: 100%;
+    }
+    .see-more-btn{
+        margin-bottom: 30px;
+    }
+    .footer-nav-1 a
+
+
 }
