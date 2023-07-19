@@ -1,3 +1,8 @@
+/* Multiverse Start Here */
+*{
+    padding: 0;
+    margin: 0;
+}
 html{
     font-size: 16px;
 }
@@ -13,6 +18,7 @@ body{
 .row{
     width: 100%;
     display: flex;
+    align-items: center;
 }
 .col-8{
     width: 65%;
@@ -45,6 +51,25 @@ body{
     padding: 15px 35px;
     cursor: pointer;
 }
+.see-more-btn{
+    color: #FF42A5;
+    background: #fff;
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 35px;
+    cursor: pointer;
+}
+.section-description{
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding: 30px 0px;
+}
+/* Multiverse End Here */
+
+/* Header Section Start Here */
 .header{
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
@@ -89,8 +114,10 @@ nav a{
 .youtube{
     margin: 0px 5px;
 }
+/* Header Section End Here */
 
 /* Banner Section Start Here */
+
 .banner{
     background: url('../img/bannerbg.png') no-repeat;
     background-position: bottom left;
@@ -140,6 +167,8 @@ ul li i{
 }
 /* Banner section End here */
 
+/* Banner 2 Section Start Here */
+
 .banner-2{
     padding: 60px 0px;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
@@ -158,26 +187,95 @@ ul li i{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.banner-2 .banner-content p{
-    font-size: 1.1rem;
-    padding-bottom: 30px;
+
+/* Banner 2 Section End Here */
+
+/* Play Game Section Start Here */
+.play-game{
+    padding: 60px 0px;
+}
+.play-game .row{
+    align-items: center;
 }
 .play-game .banner-img {
     padding-left: 0px;
-    text-align: right;
+    height: 600px;
   }
-
 .banner-img .sm-img{
-    width: 250px;
-    height: 250px;
+    width: 100%;
     padding: 5px;
     border-radius: 8px;
-    position: relative;   
+    text-align: right;
+    position: relative;
+    bottom: 180px;
+    right: -120px;   
+}
+.banner-img .sm-img img{
+    width: 250px;
+    height: 250px;
 }
 .play-game .banner-content{
-    text-align: right;
-    padding-left: 80px;
+    text-align: left;
+    padding-left: 180px;
 }
+.play-game .banner-content h3{
+    padding-bottom: 30px;
+}
+/* Play Game Section End Here */
+
+/* Careers Section End Here */
+.careers{
+    background: url('../img/Vector2.png'), linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    padding: 60px 0px;
+    background-position: bottom right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.careers .banner-content, .careers .banner-content h3{
+    color: #fff;
+}
+.careers .banner-content .section-description{
+    font-weight: 300;
+}
+.banner-content .job-info .section-description{
+    font-weight: 400;
+    padding: 0;
+    margin-bottom: 40px;
+}
+.job-info{
+    display: flex;
+}
+.job-info .job-info-box-2{
+    text-align: right;
+}
+/* Careers Game Section End Here */
+
+/* Game Categories Section Start Here */
+.categories{
+    padding: 60px 0px;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+.categories-box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+}
+.categories-box .img-box{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background: #fff;
+    border-radius: 50px;
+}
+.img-box img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+/* Game Categories Section End Here */
+
 /* Media quary Stat Here */
 @media (max-width: 576px) {
     .row{
