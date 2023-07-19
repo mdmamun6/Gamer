@@ -136,7 +136,6 @@ nav a{
 }
 .banner-content h2{
     font-size: 5rem;
-    margin: -10px 0px;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -156,7 +155,7 @@ ul li i{
 .fa-circle-play, .fa-download{
     color: #F948B2;
 }
-.dubble-btn {
+.duble-btn {
     padding: 30px 0px;
   }
 .banner-img{
@@ -190,9 +189,47 @@ ul li i{
 
 /* Banner 2 Section End Here */
 
+/* Feature Section Start Here */
+.feature{
+    padding-top: 80px;
+}
+.feature .banner-content{
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+}
+.card .section-description{
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    padding: 10px 0px;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.card img{
+    width: 100%;
+}
+.hover-box{
+    width: 25%;
+}
+.overly-icon{
+    width: 100%;
+}
+.hover-box .overly-icon img{
+    width: 50px;
+    height: 50px
+} 
+.hover-box .overly-icon p{
+    text-align: center;
+}
+/* Feature Section End Here */
+
 /* Play Game Section Start Here */
 .play-game{
-    padding: 60px 0px;
+    padding: 80px 0px;
 }
 .play-game .row{
     align-items: center;
