@@ -320,13 +320,19 @@ ul li i{
 }
 .banner-content .job-info .section-description{
     font-weight: 400;
+    font-size: 1rem;
     padding: 0;
     margin-bottom: 40px;
 }
 .job-info{
     display: flex;
 }
+.job-info .job-info-box-1 {
+    text-align: left;
+    width: 60%;
+  }
 .job-info .job-info-box-2{
+    width: 40%;
     text-align: right;
 }
 /* Careers Game Section End Here */
@@ -341,10 +347,10 @@ ul li i{
 }
 .categories-box{
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(5,auto);
-    grid-gap: 10px;
+    display: flex;
+    gap: 15px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .categories-box .img-box{
     display: flex;
@@ -352,14 +358,6 @@ ul li i{
     padding: 8px;
     background: #fff;
     border-radius: 50px;
-}
-.categories-box-2{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4,auto);
-    grid-gap: 10px;
-    justify-content: center;
-    padding-top: 20px;
 }
 .categories-box-2 .img-box{
     display: flex;
@@ -424,7 +422,7 @@ ul li i{
 }
 .socila-icon img{
     width: 30px;
-    height: 30;
+    height: 30px;
     padding: 15px 8px;
 }
 .copyright{
@@ -434,7 +432,8 @@ ul li i{
 /* Footer section End Here */
 
 /* Media quary Stat Here */
-@media (max-width: 576px) {
+
+@media screen and (max-width: 576px) {
     .container{
         padding: 0px 20px;
     }
@@ -444,8 +443,13 @@ ul li i{
         justify-content: center;
         align-items: center;
     }
-    .col-8, .col-6, .col-4 {
+    .col-8, .col-6, .col-4, .feature-box {
         width: 100%;
+      }
+      .section-description {
+        font-size: 1rem;
+        line-height: 1.4rem;
+        padding: 30px 0px;
       }
     .logo{
         justify-content: center;
@@ -467,10 +471,33 @@ ul li i{
     .banner .row{
         flex-direction: column-reverse;
     }
+    .banner .banner-content{
+        text-align: left;
+        padding: 60px 30px 0px 30px;
+    }
+    .careers .banner-content{
+        text-align: left;
+    }
     .banner-content{
         text-align: center;
         justify-content: center;
         align-items: center;
+    }
+    .banner-content h3, .banner-2 .banner-content h3 {
+        font-size: 2rem;
+    }
+    .banner-content h2 {
+        font-size: 3.2rem;
+    }
+    .play-game .banner-img {
+        padding-left: 0px;
+        height: 500px;
+    }
+    .play-game .row{
+        flex-direction: column-reverse;
+    }
+    .play-game .section-description{
+        padding-bottom: 60px;
     }
     .card{
         flex-direction: column;
@@ -498,14 +525,92 @@ ul li i{
     }
     .job-info .job-info-box-1{
         text-align: left;
+        width: 60%;
     }
     .careers img{
         width: 100%;
     }
+
     .see-more-btn{
-        margin-bottom: 30px;
+        margin-bottom: 60px;
     }
-    .footer-nav-1 a
+    .categories-box{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-gap: 15px;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .img-box img {
+        width: 30px;
+        height: 30px;
+      }
+    .img-box h4 {
+        font-size: 0.8rem;
+        font-weight: 600;
+      }
+    .footer-nav-1, .footer-nav-2{
+        padding: 30px 60px;
+    }
+    .footer-nav-1 a, .footer-nav-2 a{
+        font-size: 1rem;
+        padding: 0px 20px;
+        line-height: 2rem;
+    }
+    .socila-icon img{
+        padding: 15px 20px;
+    }
 
-
+}
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .container{
+        padding: 0px 40px;
+    }
+    .col-8 {
+        width: 50%;
+    }
+    .col-4 {
+        width: 50%;
+    }
+    .header .row{
+        display: block;
+        justify-content: center;
+    }
+    .header .col-6{
+        width: 100%;
+    }
+    .logo, nav{
+        justify-content: center;
+    }
+    .banner-content h3, .banner-2 .banner-content h3 {
+        font-size: 1.8rem;
+    }
+    .banner-content h2 {
+        font-size: 4rem;
+    }
+    .banner-img .sm-img img {
+        width: 200px;
+        height: 200px;
+      }
+      .banner-img img {
+        width: 90%;
+      }
+      .banner-img .sm-img{
+        bottom: 138px;
+        right: -31px;
+      }
+      .play-game .banner-content {
+        padding-left: 100px;
+      }
+      .play-game .banner-img {
+        padding-left: 0px;
+        height: 414px;
+      }
+      .careers .row{
+          display: block;
+      }
+      .careers .col-6{
+          width: 100%;
+      }
 }
